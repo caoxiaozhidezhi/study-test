@@ -60,7 +60,7 @@ row = 1
 while row <= 5:
     col = 1
     while col <= row:
-        print("*",)
+        print("*", end="")
         col += 1
     print("")
     row += 1
@@ -69,20 +69,20 @@ print("\n")
 # ============九九乘法表================
 for i in range(1, 10):
     for j in range(1, i + 1):
-        print("%d*%d=%2d" % (i, j, i * j))
+        print("%d*%d=%2d" % (i, j, i * j), end=" ")
     print(" ")
 print("\n")
 
 for i in range(1, 10):
     for j in range(i, 10):
-        print(("%d*%d=%2d") % (i, j, i * j))
+        print(("%d*%d=%2d") % (i, j, i * j), end=" ")
     print(" ")
 print("\n")
 
 for i in range(1, 10):
     for k in range(1, 10 - i):
-        print("      ")  # 有6个空格
+        print("      ", end=" ")  # 有6个空格
     for j in range(1, i + 1):
         product = i * j
-        print("%d*%d=%2d" % (i, j, product))
+        print("%d*%d=%2d" % (i, j, product), end=" ")
     print(" ")
