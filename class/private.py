@@ -53,8 +53,6 @@ class B(A):
         # 调用父类的公有方法
         self.test()
 
-        pass
-
 
 b = B()
 print(b)
